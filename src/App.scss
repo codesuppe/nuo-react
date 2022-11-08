@@ -1,0 +1,463 @@
+//root
+
+$orange_color: #BF7B3F;
+$navy_color: #184059;
+$lightblue_color: #5C88A4;
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+
+
+//slogan
+.slogan {
+
+    
+
+    display:flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: .9
+    rem;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.homeslogan {
+    background-color: black;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+
+    
+}
+
+.frontpageslogan {
+    grid-column: 8/10;
+    align-self: flex-end;
+    background-color: black;
+    color: white;
+
+    
+}
+
+
+//spantext
+
+span {
+    color: $navy_color;
+    font-size: 2rem;
+    
+    
+}
+
+.headerlightblue {
+    color: $lightblue_color;
+}
+
+.headerorange {
+    color: $orange_color;
+}
+
+//navigation
+
+.gridNav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px;
+
+    margin-top: 30px;
+    a{
+        grid-column: 3/4;
+        #backBtn{
+            height: 90%;
+            width: 90%;
+            object-fit: contain;
+        }
+    }
+
+}
+
+#navigation {
+    grid-column: 4/10;
+    display: flex; 
+    height:60px; 
+    justify-content: space-between;
+}
+
+.pageBtn {
+    min-width: 50px;
+    min-height: 50px; 
+    background-color: $navy_color;
+    border-radius: 10px;
+}
+
+.navy {
+    background-color: $navy_color;
+}
+
+.lightblue {
+    background-color: $lightblue_color;
+}
+.orange {
+    background-color: $orange_color;
+}
+
+.logobox {
+    
+    display: flex; 
+    align-items: flex-end;
+    img{
+        object-fit: cover; 
+        height: 100%;
+        width: 100%;
+    }
+}
+
+nav {
+    display: flex; 
+    gap: 15px;
+   
+    img{
+        object-fit: contain;
+        height: 90%;
+        width: 90%;
+        border-radius: 10px;
+    }
+}
+
+//Frontpage
+.gridFront {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    margin-bottom: 100px;
+}
+
+.flexFront {
+    grid-column: 4/10;
+    display: flex; 
+    gap: 20px;
+    justify-content: space-between;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+//home
+
+.homeGrid {
+    display: flex;
+    margin: 20px 14vw;
+    
+    align-items: flex-start;
+
+    .homeBanner {
+        max-width: max-content;
+        width: 100%;
+        img {
+            width: 100%; 
+            height: 100%;
+            object-fit: contain;
+       
+        }
+    }
+    
+    .textFront {
+        display: flex; 
+        flex-direction: column;
+        margin-left: 20px;  
+
+        p:first-of-type{
+            margin-top: 15px;
+        }
+    }
+    
+    .homeTxt {
+        position: relative;
+       p{
+        padding-top: 10px;
+       }
+        color: white;
+    }
+    
+}
+
+//contact 
+
+.contactPeople {
+    
+    display: flex;
+    gap: 15px;
+    margin: 20px auto 0 auto;
+    
+    font-weight: bold;
+    
+    align-items: flex-start;
+    color: black;
+    width: 80%;
+
+
+    .contactPeopleBox {
+        
+        margin: 0 auto;
+        
+        img {
+            width: 100%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        p {
+            padding: 0;
+            text-align: center;
+            font-size: .9vw;
+        }
+    }
+
+
+    
+}
+
+//mobile
+
+.pageWrap {
+    margin: 0 20px;
+
+}
+
+.mGridNav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px;
+    
+    
+    margin-top: 30px;
+    a{
+        grid-column: 2/3;
+        #backBtn{
+            height: 90%;
+            width: 90%;
+            object-fit: contain;
+        }
+    }
+
+}
+
+#mNavigation {
+    grid-column: 7/12;
+    display: flex; 
+    height:60px; 
+    width: 100%;
+    justify-content: space-around;
+   
+}
+
+.mobileFront {
+    margin: 40px 0 100px;
+    height: auto;
+    
+}
+.mobileLogo {
+    grid-column: 3/6;
+    height: 7vh;
+    padding-left: 20px;
+    img{
+        object-fit: contain; 
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+
+.mobileFrontgrid {
+    display: grid; 
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    gap: 20px;
+    
+
+    a {
+        
+        grid-column: 1/3;
+        text-align: center;
+        img{
+            width: 90%;
+            object-fit: contain;
+            
+        }
+    }
+}
+
+.mobileBanner {
+    margin: 10px 0 20px; 
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+}
+
+.mobileTxt {
+
+    p:first-of-type {
+        margin-top: 20px;
+    }
+    h1{
+        color: black; 
+    }
+    
+    color: white; 
+}
+
+.mobilefrontpageslogan {
+    grid-column: 2/3;
+    margin-right: 25px;
+    background-color:  black;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.pagesLogo {
+    margin: 50px 0;
+    padding-right: 20px;
+    display: flex; 
+    justify-content: flex-end;
+    width: 100%;
+
+    img {
+        
+        width: 20%;
+        object-fit: cover;
+    }
+}
+
+
+.pageBtn_underline {
+    margin: 3px 0;
+    height: 8px;
+    width: 100%;
+    border-radius: 20px;
+    opacity: 0;
+}
+.active .pageBtn_underline {
+    opacity: 1;
+    
+}
+
+//modal 
+
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 5px;
+    background-color: $orange_color;
+    box-shadow: #666 1px 1px 5px;
+    border-radius: 10px;
+}
+
+.closeModal {
+    position: relative;
+    width:100%;
+    float: left;
+    
+    div {
+    position: relative;
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: calc(0.3em + 0.3vw);
+    cursor: pointer;
+    }
+}
+
+.modalForm {
+text-align: center;
+    input {
+        display: block;
+        margin: 5px auto;
+        padding: 5px;
+        width: calc(10em + 20vw);
+        background-color: lightgray;
+        border: 2px solid $navy_color;
+    }
+
+    #message {
+        width: calc(10em + 20vw);
+        height: calc(2em + 5vh);
+        resize: none;
+        padding: 5px;
+        background-color: lightgray;
+        border: 2px solid $navy_color;
+        
+    }
+    .submitBtn {
+        width:  calc(10em + 20vw);
+        background-color: $navy_color;
+        color: white;
+        border: none;
+        padding: 10px 0;
+        display: block;
+        margin: 0 auto;
+        
+    }
+}
+
+.modalMobile {
+    width: 100%;
+    height: 90%;
+}
+
+.modalFormMobile {
+    background-color: $orange_color;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px; 
+
+    input {
+        width: calc(10em + 20vw);
+        background-color: lightgray;
+        margin: 5px auto;
+    }
+
+    .submitBtn {
+        display: block;
+        margin: 0 auto;
+        background-color: $navy_color;
+        color: white;
+        border: none;
+        padding: 10px 5px;
+    }
+
+    #message {
+        width: calc(10em + 20vw);
+        background-color: lightgray;
+        height: calc(2em + 10vh);
+        resize: none;
+    }
+}
+
