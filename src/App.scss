@@ -43,7 +43,7 @@ h1 {
     background-color: black;
     padding: 5px 15px;
     font-size: 1.2rem;
-
+    z-index: 1000;
     
 }
 
@@ -371,7 +371,7 @@ nav {
 .modal {
     position: absolute;
     width: 100%;
-    height: 90%;
+    height: 100%;
     top: 5px;
     background-color: $orange_color;
     box-shadow: #666 1px 1px 5px;
@@ -379,13 +379,13 @@ nav {
 }
 
 .closeModal {
-    position: relative;
+    position: absolute;
+    display: inline-block;
     width:100%;
-    float: left;
+   
     
     div {
     position: relative;
-    display: block;
     float: right;
     width: 30px;
     height: 30px;
@@ -396,6 +396,7 @@ nav {
 
 .modalForm {
 text-align: center;
+margin-top: 15px;
     input {
         display: block;
         margin: 5px auto;
@@ -407,7 +408,7 @@ text-align: center;
 
     #message {
         width: calc(10em + 20vw);
-        height: calc(2em + 5vh);
+        height: calc(2em + 4vh);
         resize: none;
         padding: 5px;
         background-color: lightgray;
@@ -424,11 +425,20 @@ text-align: center;
         margin: 0 auto;
         
     }
+
+    p {
+        
+        font-size: .7rem;
+    }
+    #name-error {
+        margin-top: 0;
+    }
 }
 
 .modalMobile {
+    position: relative;
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 .modalFormMobile {
@@ -458,6 +468,11 @@ text-align: center;
         background-color: lightgray;
         height: calc(2em + 10vh);
         resize: none;
+    }
+
+    p{
+        color: white;
+        font-size: 0.8rem;
     }
 }
 

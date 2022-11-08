@@ -65,26 +65,27 @@ const MobileModal = ({ index, isOpen, onClose, modaldata }) => {
           type="text"
           className="name"
           placeholder="Name"
-          value={errors.name?.message}
           {...register("name")}
         />
+
+        <p>{errors.name?.message}</p>
 
         <input
           type="email"
           className="email"
           placeholder="Email"
-          value={errors.email?.message}
           {...register("email")}
         />
+        <p>{errors.email?.message}</p>
 
         <textarea
           id="message"
           type="text"
           name="message"
           placeholder="Message"
-          value={errors.message?.message}
           {...register("message")}
         />
+        <p>{errors.message?.message}</p>
 
         <button type="submit" className="submitBtn">
           Submit
